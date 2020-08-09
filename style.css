@@ -1,0 +1,585 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.navbar{
+    color: rgb(255, 255, 255);
+}
+.EditNav{
+    width: 160px !important;
+}
+.row1{
+    color: white;
+}
+.ml2 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+.ml2 .letter {
+  display: inline-block;
+  line-height: 1em;
+  font-style:sans-serif;
+}
+.ml3 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+.ml3 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+.row2{
+    padding: 20px;
+    padding-top: 50px;
+}
+.row3{
+    padding: 20px;
+    padding-top: 50px;
+    flex-direction: row-reverse;
+}
+.featureInfo{
+    display: inline-block;
+    padding: 120px 0;
+    width: 100%;
+    max-width: 470px;
+    text-align: left;
+}
+.btn{
+  font-weight: bolder;
+  background: #f7901e;
+  border: none;
+  border-radius: 30px;
+}
+.btn:hover{
+  background: #bcbcbc !important;
+  color: white !important;
+}
+.button {
+  border: none;
+  border-radius: 20px;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #1f1f4d;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.button:hover {
+  background-color: #555;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+.img-holder{
+    background-image: url(cloud-bg-sm.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    text-align: center;
+    padding: 30px 0;
+}
+.row4{
+    background: rgb(41, 41, 41);
+    color: white;
+}
+.backgroundColor{
+    background: rgb(218, 218, 218);
+}
+.backgroundColorDomain{
+  background: #62acb5;
+}
+.backgroundColorWeb{
+  background: #f7901e;
+}
+.backgroundColorServices{
+  background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(Services.jpg);
+  height: 50vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.backgroundColorTeam{
+  background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(Team.jpeg);
+  height: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Text-Alignment{
+    font-size: 8vw;
+}
+.sub-footer{
+    border-top: 1px solid #91a0bd;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.a{
+    padding: inherit;
+    color: #ffffff;
+}
+.a:hover{
+    color: rgb(153, 153, 153);
+}
+#header-holder:before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(Background1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.17;
+    z-index: -1;
+}
+#header-holder {
+    position: relative;
+    background-color: #1d1d1d;
+    z-index: 10;
+}
+.feature-title {
+    font-size: 33px;
+    font-weight: 700;
+    color: #333c4e;
+    margin-bottom: 20px;
+}
+.feature-text {
+    font-size: 18px;
+    font-weight: 300;
+    color: #090a19;
+    margin-bottom: 25px;
+    width: 100%;
+}
+.Home{
+    background: white;
+    color: rgb(44, 44, 44) !important;
+    border-radius: 30px;
+    padding: 10px !important;
+}
+.Home:hover{
+    background: #1d1d1d;
+    color: white !important;
+    transition: 1s;
+}
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+.scrollup{
+    width:40px;
+    height:40px;
+    opacity:0.3;
+    position:fixed;
+    bottom:50px;
+    right:100px;
+    display:none;
+    text-indent:-9999px;
+    background: url('icon_top.png') no-repeat;
+}
+#mainNav {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    transition: background-color 0.2s ease;
+  }
+  #mainNav .navbar-brand {
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    color: #212529;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    color: #6c757d;
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0.75rem 0;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
+    color: #f7901e;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link.active {
+    color: #f7901e !important;
+  }
+  @media (min-width: 992px) {
+    #mainNav {
+      box-shadow: none;
+      background-color: transparent;
+    }
+    #mainNav .navbar-brand {
+      color: #f7901e;
+    }
+    #mainNav .navbar-brand:hover {
+      color: #fff;
+    }
+    #mainNav .navbar-nav .nav-item .nav-link {
+      color: rgba(255, 255, 255, 0.7);
+      padding: 0 1rem;
+    }
+    #mainNav .navbar-nav .nav-item .nav-link:hover {
+      color: #f7901e;
+    }
+    #mainNav .navbar-nav .nav-item:last-child .nav-link {
+      padding-right: 0;
+    }
+    #mainNav.navbar-scrolled {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      background-color: rgb(255, 255, 255);
+    }
+    #mainNav.navbar-scrolled .navbar-brand {
+      color: #212529;
+    }
+    #mainNav.navbar-scrolled .navbar-brand:hover {
+      color: #bcbcbc;
+    }
+    #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
+      color: #212529;
+    }
+    #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
+      color: #bcbcbc;
+    }
+  }
+
+  #Smallchat .Messages, #Smallchat .Messages_list {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+.chat_close_icon {
+   cursor:pointer;
+    color: #fff;
+    font-size:16px;
+    position: absolute;
+    right: 12px;
+    z-index: 9;
+}
+.chat_on {
+    position: fixed;
+    z-index: 10;
+    width: 55px;
+    height: 55px;
+    right: 15px;
+    bottom:20px;
+    background-color: #f7901e;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    padding: 9px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+    cursor: pointer;
+    display: block;
+}
+.chat_on_icon{
+    color:#fff;
+    font-size:25px;
+    text-align:center;
+}
+/*
+#Smallchat,#Smallchat * {
+ box-sizing:border-box; 
+ -webkit-font-smoothing:antialiased;
+ -moz-osx-font-smoothing:grayscale;
+ -webkit-tap-highlight-color:transparent
+}
+*/
+#Smallchat .Layout { 
+ pointer-events:auto;
+ box-sizing:content-box!important;
+ z-index:999999999;
+ position:fixed;
+ bottom:20px;
+ min-width:50px;
+ max-width:300px;
+ max-height:30px;
+ display:-webkit-box;
+ display:-webkit-flex;
+ display:-ms-flexbox;
+ display:flex;
+ -webkit-box-orient:vertical;
+ -webkit-box-direction:normal;
+ -webkit-flex-direction:column;
+ -ms-flex-direction:column;
+ flex-direction:column;
+ -webkit-box-pack:end;
+ -webkit-justify-content:flex-end;
+ -ms-flex-pack:end;
+ justify-content:flex-end;
+ border-radius:50px;
+ box-shadow:5px 0 20px 5px rgba(0,0,0,.1);
+ -webkit-animation:appear .15s cubic-bezier(.25,.25,.5,1.1);
+ animation:appear .15s cubic-bezier(.25,.25,.5,1.1);
+ -webkit-animation-fill-mode:forwards;
+ animation-fill-mode:forwards;
+ opacity:0;
+ -webkit-transition:right .1s cubic-bezier(.25,.25,.5,1),bottom .1s cubic-bezier(.25,.25,.5,1),min-width .2s cubic-bezier(.25,.25,.5,1),max-width .2s cubic-bezier(.25,.25,.5,1),min-height .2s cubic-bezier(.25,.25,.5,1),max-height .2s cubic-bezier(.25,.25,.5,1),border-radius 50ms cubic-bezier(.25,.25,.5,1) .15s,background-color 50ms cubic-bezier(.25,.25,.5,1) .15s,color 50ms cubic-bezier(.25,.25,.5,1) .15s;
+ transition:right .1s cubic-bezier(.25,.25,.5,1),bottom .1s cubic-bezier(.25,.25,.5,1),min-width .2s cubic-bezier(.25,.25,.5,1),max-width .2s cubic-bezier(.25,.25,.5,1),min-height .2s cubic-bezier(.25,.25,.5,1),max-height .2s cubic-bezier(.25,.25,.5,1),border-radius 50ms cubic-bezier(.25,.25,.5,1) .15s,background-color 50ms cubic-bezier(.25,.25,.5,1) .15s,color 50ms cubic-bezier(.25,.25,.5,1) .15s
+     
+}
+
+#Smallchat .Layout-right {
+ right:20px
+}
+
+#Smallchat .Layout-open {
+ overflow:hidden;
+ min-width:300px;
+ max-width:300px;
+ height:500px;
+ max-height:500px;
+ border-radius:10px;
+ color:#fff;
+ -webkit-transition:right .1s cubic-bezier(.25,.25,.5,1),bottom .1s cubic-bezier(.25,.25,.5,1.1),min-width .2s cubic-bezier(.25,.25,.5,1.1),max-width .2s cubic-bezier(.25,.25,.5,1.1),max-height .2s cubic-bezier(.25,.25,.5,1.1),min-height .2s cubic-bezier(.25,.25,.5,1.1),border-radius 0ms cubic-bezier(.25,.25,.5,1.1),background-color 0ms cubic-bezier(.25,.25,.5,1.1),color 0ms cubic-bezier(.25,.25,.5,1.1);
+ transition:right .1s cubic-bezier(.25,.25,.5,1),bottom .1s cubic-bezier(.25,.25,.5,1.1),min-width .2s cubic-bezier(.25,.25,.5,1.1),max-width .2s cubic-bezier(.25,.25,.5,1.1),max-height .2s cubic-bezier(.25,.25,.5,1.1),min-height .2s cubic-bezier(.25,.25,.5,1.1),border-radius 0ms cubic-bezier(.25,.25,.5,1.1),background-color 0ms cubic-bezier(.25,.25,.5,1.1),color 0ms cubic-bezier(.25,.25,.5,1.1);
+}
+
+#Smallchat .Layout-expand {
+ height:500px;
+ min-height:500px;
+      display:none;
+}
+#Smallchat .Layout-mobile {
+ bottom:10px
+}
+#Smallchat .Layout-mobile.Layout-open {
+ width:calc(100% - 20px);
+ min-width:calc(100% - 20px)
+}
+#Smallchat .Layout-mobile.Layout-expand {
+ bottom:0;
+ height:100%;
+ min-height:100%;
+ width:100%;
+ min-width:100%;
+ border-radius:0!important
+}
+@-webkit-keyframes appear {
+ 0% {
+  opacity:0;
+  -webkit-transform:scale(0);
+  transform:scale(0)
+ }
+ to {
+  opacity:1;
+  -webkit-transform:scale(1);
+  transform:scale(1)
+ }
+}
+@keyframes appear {
+ 0% {
+  opacity:0;
+  -webkit-transform:scale(0);
+  transform:scale(0)
+ }
+ to {
+  opacity:1;
+  -webkit-transform:scale(1);
+  transform:scale(1)
+ }
+}
+#Smallchat .Messenger_messenger {
+ position:relative;
+ height:100%;
+ width:100%;
+ min-width:300px;
+ -webkit-box-orient:vertical;
+ -webkit-box-direction:normal;
+ -webkit-flex-direction:column;
+ -ms-flex-direction:column;
+ flex-direction:column
+}
+#Smallchat .Messenger_header,#Smallchat .Messenger_messenger {
+ display:-webkit-box;
+ display:-webkit-flex;
+ display:-ms-flexbox;
+ display:flex
+}
+#Smallchat .Messenger_header {
+ -webkit-box-align:center;
+ -webkit-align-items:center;
+ -ms-flex-align:center;
+ align-items:center;
+ padding-left:10px;
+ padding-right:40px;
+ height:40px;
+ -webkit-flex-shrink:0;
+ -ms-flex-negative:0;
+ flex-shrink:0
+}
+
+
+#Smallchat .Messenger_header h4 {
+ opacity:0;
+ font-size:16px;
+ -webkit-animation:slidein .15s .3s;
+ animation:slidein .15s .3s;
+ -webkit-animation-fill-mode:forwards;
+ animation-fill-mode:forwards
+}
+
+#Smallchat .Messenger_prompt {
+ margin:0;
+ font-size:16px;
+ line-height:18px;
+ font-weight:400;
+ overflow:hidden;
+ white-space:nowrap;
+ text-overflow:ellipsis
+}
+
+@-webkit-keyframes slidein {
+ 0% {
+  opacity:0;
+  -webkit-transform:translateX(10px);
+  transform:translateX(10px)
+ }
+ to {
+  opacity:1;
+  -webkit-transform:translateX(0);
+  transform:translateX(0)
+ }
+}
+@keyframes slidein {
+ 0% {
+  opacity:0;
+  -webkit-transform:translateX(10px);
+  transform:translateX(10px)
+ }
+ to {
+  opacity:1;
+  -webkit-transform:translateX(0);
+  transform:translateX(0)
+ }
+}
+#Smallchat .Messenger_content {
+    height: 450px;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+}
+#Smallchat .Messages {
+    position: relative;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #fff;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+
+
+
+#Smallchat .Input {
+    position: relative;
+    width: 100%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    color: #96aab4;
+    background-color: #fff;
+    border-top: 1px solid #e6ebea;
+}
+#Smallchat .Input-blank .Input_field {
+    max-height: 20px;
+}
+#Smallchat .Input_field {
+    width: 100%;
+    resize: none;
+    border: none;
+    outline: none;
+    padding: 0;
+        padding-right: 0px;
+        padding-left: 0px;
+    padding-left: 20px;
+    padding-right: 75px;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 20px;
+    min-height: 20px !important;
+}
+#Smallchat .Input_button-emoji {
+    right: 45px;
+}
+#Smallchat .Input_button {
+    position: absolute;
+    bottom: 15px;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+#Smallchat .Input_button-send {
+    right: 15px;
+}
+#Smallchat .Input-emoji .Input_button-emoji .Icon, #Smallchat .Input_button:hover .Icon {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+#Smallchat .Input-emoji .Input_button-emoji .Icon path, #Smallchat .Input_button:hover .Icon path {
+    fill: #2c2c46;
+}
